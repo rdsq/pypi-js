@@ -1,3 +1,12 @@
 {
-    "deno.enable": true
+    "deno.enable": true,
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        "src/package.d.ts"
+    ]
 }
