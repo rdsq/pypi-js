@@ -6,6 +6,9 @@
     "version": "1.0.0",
     "fmt": {
         "singleQuote": true,
-        "indentWidth": 4
+        "indentWidth": 4,
+        "exclude": [
+            "src/package.d.ts"
+        ]
     }
 }
