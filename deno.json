@@ -1,0 +1,10 @@
+{
+    "name": "@rdsq/pypi",
+    "exports": {
+        ".": "./src/mod.ts"
+    },
+    "fmt": {
+        "singleQuote": true,
+        "indentWidth": 4
+    }
+}
