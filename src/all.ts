@@ -17,7 +17,8 @@ export function* iterateHtmlInput(htmlInput: string): Generator<string> {
 }
 
 /**
- * Iterate all packages in the PyPI registry
+ * Iterate all packages in the PyPI registry.
+ * Some of them may not exist
  * @example
  * for (const packageName of await pypi.iterate()) {}
  */
@@ -33,7 +34,8 @@ export async function iterate(): Promise<Generator<string>> {
 }
 
 /**
- * Get all packages in the PyPI registry. The `iterate` method is often more efficient
+ * Get all packages in the PyPI registry. The `iterate` method is often more efficient.
+ * Some of them may not exist
  * @returns All packages as an array
  */
 export async function all(): Promise<string[]> {
