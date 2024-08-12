@@ -106,5 +106,18 @@ export type PypiPackage = {
         "yanked": boolean, // same
         "yanked_reason": null | string,
     }[],
-    "vulnerabilities": []
+    "vulnerabilities": {
+        "aliases": [
+            "CVE-2022-XXXXX"
+        ],
+        "details": "A long description.",
+        "summary": "A shorter summary.",
+        "fixed_in": [
+            "1.2.3"
+        ],
+        "id": "PYSEC-2022-XXX",
+        "link": "https://osv.dev/vulnerability/PYSEC-2022-XXX",
+        "source": "osv",
+        "withdrawn": "2022-06-28T16:39:06Z"
+    }[]
 };
