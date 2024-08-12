@@ -1,5 +1,5 @@
 /**
- * The PyPI JSON API response type. From [here](https://warehouse.pypa.io/api-reference/json.html)
+ * The PyPI JSON API response type. [Reference](https://warehouse.pypa.io/api-reference/json.html)
  */
 export type PypiPackage = {
     "info": {

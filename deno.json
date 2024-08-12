@@ -8,7 +8,8 @@
         "singleQuote": true,
         "indentWidth": 4,
         "exclude": [
-            "src/package.d.ts"
+            "src/package.d.ts",
+            "src/stats.d.ts"
         ]
     }
 }
