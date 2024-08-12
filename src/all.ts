@@ -24,8 +24,8 @@ export function* iterateHtmlInput(htmlInput: string): Generator<string> {
 export async function iterate(): Promise<Generator<string>> {
     const res = await fetch(allPackagesEndpoint, {
         headers: {
-            'Accept': 'text/html'
-        }
+            'Accept': 'text/html',
+        },
     });
     if (!res.ok) throw new Error(`${res.status}: ${res.statusText}`);
     const htmlInput = await res.text();

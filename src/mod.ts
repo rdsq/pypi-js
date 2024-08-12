@@ -1,6 +1,3 @@
-import { iterate, all } from './all.ts';
+import { all, iterate } from './all.ts';
 
-export {
-    iterate,
-    all,
-}
+export { all, iterate };
