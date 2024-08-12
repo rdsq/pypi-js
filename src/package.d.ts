@@ -1,3 +1,6 @@
+/**
+ * The PyPI JSON API response type. From [here](https://warehouse.pypa.io/api-reference/json.html)
+ */
 export type PypiPackage = {
     "info": {
         "author": string,
