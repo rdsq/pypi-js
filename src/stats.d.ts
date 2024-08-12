@@ -1,5 +1,6 @@
 /**
- * Stats of the PyPI registry. [Reference](https://warehouse.pypa.io/api-reference/stats.html)
+ * Stats of the PyPI registry. [Reference](https://warehouse.pypa.io/api-reference/stats.html).
+ * For the `stats` method
  */
 export type PypiStats = {
     /** Top 100 packages + their size in bytes */
