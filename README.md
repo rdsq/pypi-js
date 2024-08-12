@@ -16,7 +16,8 @@ for (const packageName of await pypi.iterate()) {
 
 ## All
 
-`all` method returns all packages in the PyPI registry as a list of strings. It is often more efficient to use the `iterate` method
+`all` method returns all packages in the PyPI registry as a list of strings. It
+is often more efficient to use the `iterate` method
 
 ```ts
 import * as pypi from '@rdsq/pypi';
@@ -39,7 +40,8 @@ console.log(await pypi.getPackage('django'));
 
 ## Stats
 
-`stats` is a method for getting stats of the PyPI registry. Has only two fields: `top_packages` and `total_packages_size`
+`stats` is a method for getting stats of the PyPI registry. Has only two fields:
+`top_packages` and `total_packages_size`
 
 ```ts
 import * as pypi from '@rdsq/pypi';
