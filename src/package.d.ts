@@ -36,7 +36,7 @@ export type PypiPackage = {
         "project_url": string,
         "project_urls": {
             [key: string]: string,
-        },
+        } | null,
         "release_url": string,
         "requires_dist": string[],
         "requires_python": string,
