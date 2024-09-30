@@ -4,8 +4,8 @@
  */
 export type PypiPackage = {
     "info": {
-        "author": string,
-        "author_email": string,
+        "author": string | null,
+        "author_email": string | null,
         /**
          * @deprecated The `bugtrack_url` key on this response should be considered deprecated.
          * It currently always returns `null` and in the future, the `bugtrack_url` key may be removed from this response.
@@ -13,9 +13,9 @@ export type PypiPackage = {
         "bugtrack_url": null,
         "classifiers": string[],
         "description": string,
-        "description_content_type": string,
-        "docs_url": null,
-        "download_url": string,
+        "description_content_type": string | null,
+        "docs_url": string | null, // string I guess
+        "download_url": string | null,
         /**
          * @deprecated The `downloads` key on this response should be considered deprecated.
          * It currently always returns `-1` and in the future, the `downloads` key may be removed from this response.
@@ -26,9 +26,9 @@ export type PypiPackage = {
             "last_week": -1
         },
         "dynamic": null, // not in docs
-        "home_page": string,
+        "home_page": string | null,
         "keywords": string | null,
-        "license": string,
+        "license": string | null,
         "maintainer": string | null,
         "maintainer_email": string | null,
         "name": string,
@@ -38,7 +38,7 @@ export type PypiPackage = {
         "project_urls": {
             [key: string]: string,
         } | null,
-        "provides_extra": null, // not mentioned in docs
+        "provides_extra": string[] | null, // not mentioned in docs
         "release_url": string,
         "requires_dist": string[] | null,
         "requires_python": string | null,
